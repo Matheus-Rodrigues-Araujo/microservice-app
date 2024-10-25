@@ -2,7 +2,8 @@
 
 This is a fullstack application built with a microservice architecture approach using various technologies including Nest.js, Node.js, JavaScript/TypeScript, Next.js/React.js, MySQL, MongoDB, RabbitMQ, and Docker.
 
-[video](assets/demo.webm)
+[app-demo.webm](https://github.com/user-attachments/assets/e4c0fe02-5f30-4ed8-a9fd-e821118df08a)
+
 ## Features
 
 - Modular microservices for different application functionalities
