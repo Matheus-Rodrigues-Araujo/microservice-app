@@ -1,0 +1,9 @@
+[submodule "client"]
+	path = client
+	url = https://github.com/Matheus-Rodrigues-Araujo/frontend
+[submodule "main"]
+	path = main
+	url = https://github.com/Matheus-Rodrigues-Araujo/main
+[submodule "admin"]
+	path = admin
+	url = https://github.com/Matheus-Rodrigues-Araujo/admin
