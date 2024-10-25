@@ -2,6 +2,8 @@
 
 This is a fullstack application built with a microservice architecture approach using various technologies including Nest.js, Node.js, JavaScript/TypeScript, Next.js/React.js, MySQL, MongoDB, RabbitMQ, and Docker.
 
+<video controls autoplay src="micro-app-video-edit.mp4" title="Microservice app video" type="video/mp4"></video>
+
 ## Features
 
 - Modular microservices for different application functionalities
@@ -12,20 +14,24 @@ This is a fullstack application built with a microservice architecture approach 
 - Containerization with Docker for easy deployment and scalability
 
 - **Backend:**
+
   - [Nest.js](https://nestjs.com/)
   - [Node.js](https://nodejs.org/)
   - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) / [TypeScript](https://www.typescriptlang.org/)
   - [TypeORM](https://typeorm.io/)
 
 - **Frontend:**
+
   - [Next.js](https://nextjs.org/)
   - [React.js](https://reactjs.org/)
 
 - **Databases:**
+
   - [MySQL](https://www.mysql.com/)
   - [MongoDB](https://www.mongodb.com/)
 
 - **Messaging:**
+
   - [RabbitMQ](https://www.rabbitmq.com/)
 
 - **Containerization:**
@@ -40,17 +46,22 @@ In this application, each service is independent and responsible for a specific 
 To run this application locally, follow these steps bellow:
 
 1 .Clone the repository
- ```bash
- $ git clone https://github.com/Matheus-Rodrigues-Araujo/microservice-app
+
+```bash
+$ git clone https://github.com/Matheus-Rodrigues-Araujo/microservice-app
 ```
+
 2. Install dependencies by accessing each directory and using the following command
- ```bash
- $ npm install
- ```
+
+```bash
+$ npm install
+```
+
 3. Set up environment variables
 
-* `client`
- ```bash 
+- `client`
+
+```bash
 
 // .env.local
 
@@ -63,7 +74,7 @@ NEXT_PUBLIC_ADMIN_SERVICE_URL=http://localhost:8000
 NEXT_PUBLIC_MAIN_SERVICE_URL=http://localhost:8001
 ```
 
- ```bash 
+```bash
 
 // .env.production
 
@@ -75,9 +86,10 @@ NEXT_PUBLIC_ADMIN_SERVICE_URL=http://admin:8000
 # MAIN SERVICE URL
 NEXT_PUBLIC_MAIN_SERVICE_URL=http://main:8001
 ```
-* `/admin`
 
- ```bash 
+- `/admin`
+
+```bash
 
 // .env.local
 
@@ -115,7 +127,7 @@ RBQ_URL=
 
 ```
 
- ```bash 
+```bash
 
 // .env.production
 
@@ -153,9 +165,9 @@ FRONTEND_URL=http://localhost:3000
 RBQ_URL=
 ```
 
-* `/main`
+- `/main`
 
- ```bash 
+```bash
 
 // .env.local
 
@@ -178,7 +190,7 @@ RBQ_QUEUE=main_queue
 
 ```
 
- ```bash 
+```bash
 
 // .env.production
 
@@ -204,38 +216,45 @@ RBQ_QUEUE=
 
 4. Run the application
 
-* For `client`:
-```bash 
+- For `client`:
+
+```bash
     $ npm run dev
 ```
 
-* For `admin`:
-```bash 
+- For `admin`:
+
+```bash
     $ npm run start:dev
 ```
 
-* For `main`:
-```bash 
+- For `main`:
+
+```bash
     $ npm run start:dev
 ```
 
-* For the microservice in `main`:
-```bash 
+- For the microservice in `main`:
+
+```bash
     $ npm run listen
 ```
 
 ## Usage
-* Admin page: http://localhost:3000/admin/products
-* Main page: http://localhost:3000/main/
+
+- Admin page: http://localhost:3000/admin/products
+- Main page: http://localhost:3000/main/
 
 ## Using Docker
 
 1. Build the docker images
+
 ```bash
 $ docker-compose build
 ```
 
 2. Start the services
+
 ```bash
 $ docker-compose up
 ```
@@ -245,9 +264,11 @@ $ docker-compose up
 If you encounter difficulties connecting to MySQL, please follow these steps:
 
 1. **Check MySQL Status:**
+
    - Ensure that MySQL is running by checking the Task Manager on your PC. You can start it using MySQL Workbench or the command line.
 
 2. **Terminate MySQL Process:**
+
    - If the issue persists, locate `mysqld.exe` in the Task Manager and terminate the process.
 
 3. **Verify Port Availability:**
