@@ -2,7 +2,7 @@
 
 This is a fullstack application built with a microservice architecture approach using various technologies including Nest.js, Node.js, JavaScript/TypeScript, Next.js/React.js, MySQL, MongoDB, RabbitMQ, and Docker.
 
-<video controls autoplay src="micro-app-video-edit.mp4" title="Microservice app video" type="video/mp4"></video>
+<video controls src="micro-app-video-edit.mp4" title="Title"></video>
 
 ## Features
 
